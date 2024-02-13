@@ -29,5 +29,5 @@
 ## 사진
 
 <img width="200" src="https://github.com/aripoi/Gradpj/assets/106456245/a559d92f-8734-46e7-a327-7f233b6fc9c9">
-![KakaoTalk_20231126_194457684_02](https://github.com/aripoi/Gradpj/assets/106456245/ce94f4d1-97e0-444f-a2d3-8f6881b7d564)
-![KakaoTalk_20231125_234407960](https://github.com/aripoi/Gradpj/assets/106456245/e440b76b-da3a-44e6-ac58-fd64d16f7100)
+<img width="200" src="https://github.com/aripoi/Gradpj/assets/106456245/ce94f4d1-97e0-444f-a2d3-8f6881b7d564">
+<img width="200" src="https://github.com/aripoi/Gradpj/assets/106456245/e440b76b-da3a-44e6-ac58-fd64d16f7100">
