@@ -1,0 +1,51 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        이용 내역
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>이용 날짜</th>
+                    <th>칵테일 이름</th>
+                    <th></th>
+                    <th></th>
+                    <th>사용자 아이디</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>이용 날짜</th>
+                    <th>칵테일 이름</th>
+                    <th></th>
+                    <th></th>
+                    <th>사용자 아이디</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+            <tbody>
+                
+              <%
+              var i = 0;
+    
+              while(i < results.length) {
+            %>
+              <tr>
+                  <td><%=results[i].USE_DATE%></td>
+                  <td><%=results[i].USE_NAME%></td>
+                  <td></td>
+                  <td></td>
+                  <td><%=results[i].USE_USERID%></td>
+                  <!-- <td><a class="abox" href="/user/update/<%=results[i].U_NUM%>">수정</a></td> -->
+                  <td></td>
+              </tr>
+            <% 
+                i++;
+              }
+            %>
+            </tbody>
+        </table>
+    </div>
+</div>

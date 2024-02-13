@@ -1,0 +1,54 @@
+    <div class="card mb-4">
+      <div class="card-header">
+          <i class="fas fa-table me-1"></i>
+          칵테일 리스트
+      </div>
+      <div class="card-body">
+          <table id="datatablesSimple">
+              <thead>
+                  <tr>
+                      <th>칵테일 - 작성자</th>
+                      <th>재료-용량1</th>
+                      <th>재료-용량2</th>
+                      <th>재료-용량3</th>
+                      <th>재료-용량4<p style="float: right;">평점</p></th>
+                      <th></th>
+                  </tr>
+              </thead>
+              <tfoot>
+                  <tr>
+                    <th>칵테일 - 작성자</th>
+                    <th>재료-용량1</th>
+                    <th>재료-용량2</th>
+                    <th>재료-용량3</th>
+                    <th>재료-용량4<p style="float: right;">평점</p></th>
+                    <th></th>
+                  </tr>
+              </tfoot>
+              <tbody>
+                  
+                <%
+                var i = 0;
+      
+                while(i < results.length) {
+                  var even = results[i].C_REVPOINT/results[i].C_REVCNT;
+                  var res = even.toFixed(1);
+              %>
+                <tr>
+                    <td><img src="<%=results[i].C_IMG%>" style="width: 80px; height: 80px;"><%=results[i].C_NAME%> - <%=results[i].C_WRITER%> </td>
+                    <td><%=results[i].C_ING1%> - <%=results[i].C_VOLUME1%></td>
+                    <td><%=results[i].C_ING2%> - <%=results[i].C_VOLUME2%></td>
+                    <td><%=results[i].C_ING3%> - <%=results[i].C_VOLUME3%></td>
+                    <td><%=results[i].C_ING4%> - <%=results[i].C_VOLUME4%> <p style="float: right;"><%=results[i].C_AVGRATING%>점</p></td>
+                    <td><a class="abox" href="/cocktail/update/<%=results[i].C_ID%>">수정</a></td>
+                </tr>
+              <% 
+                  i++;
+                }
+              %>
+              </tbody>
+          </table>
+      </div>
+      <button class="btn btn-primary" style="width:70px; margin-left:16px; margin-bottom:16px; border-radius:8px;">
+        <a href="/cocktail/addition" style="text-decoration:none; color: white;">추가</a></button>
+  </div>

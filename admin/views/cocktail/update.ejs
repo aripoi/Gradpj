@@ -1,0 +1,74 @@
+<form action="/cocktail/update_process/<%=cId%>" method="post">
+  <div class="card mb-4">
+    <div class="card-header">
+      <i class="fas fa-table me-1"></i>
+      칵테일 레시피 수정 - <%=cname%>
+    </div>
+    <div class="card-body">
+
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">번호</label>
+        <div class="col-sm-5">
+          <%=cnum%>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">이름</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="name" name="cname" value="<%=cname%>">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">재료 - 용량</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="재료" name="cing1" value="<%=cing1%>">
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="용량(ml)" name="cvol1" value="<%=cvol1%>">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">재료 - 용량</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="재료" name="cing2" value="<%=cing2%>">
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="용량(ml)" name="cvol2" value="<%=cvol2%>">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">재료 - 용량</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="재료" name="cing3" value="<%=cing3%>">
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="용량(ml)" name="cvol3" value="<%=cvol3%>">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">재료 - 용량</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="재료" name="cing4" value="<%=cing4%>">
+        </div>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="용량(ml)" name="cvol4" value="<%=cvol4%>">
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div style="margin-right: 10px;">
+          <button type="submit" class="btn btn-primary">수정</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<div style="display: flex; margin-top: 10px;">
+<div style="margin-right: 10px;">
+  <a href="/cocktail/delete_process/<%=cId%>" class="btn btn-primary" style="color: white; text-decoration: none;">삭제
+  </a>
+</div>
+<div>
+  <a href="/cocktail/manage" class="btn btn-primary" style="color: white; text-decoration:none;">뒤로가기
+  </a>
+</div>
+</div>

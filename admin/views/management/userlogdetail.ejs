@@ -1,0 +1,50 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        사용자 <%=userId %> 로그
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>날짜</th>
+                    <th>시간</th>
+                    <th>로그번호</th>
+                    <th>내용</th>
+                    <th>로그분류</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>날짜</th>
+                    <th>시간</th>
+                    <th>로그번호</th>
+                    <th>내용</th>
+                    <th>로그분류</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+            <tbody>
+                
+              <%
+              var i = 0;
+    
+              while(i < results.length) {
+            %>
+              <tr>
+                <td><%=results[i].L_DATE_Y%></td>
+                <td><%=results[i].L_DATE_T%></td>
+                <td><%=results[i].L_ID%></td>
+                <td><%=results[i].L_DESC%></td>
+                <td><%=results[i].L_CAT%></td>
+                <td><a class="abox" href="/management/delete_process/<%=results[i].L_ID%>">삭제</a></td>
+              </tr>
+            <% 
+                i++;
+              }
+            %>
+            </tbody>
+        </table>
+    </div>
+</div>

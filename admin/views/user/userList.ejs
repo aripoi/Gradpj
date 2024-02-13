@@ -1,0 +1,50 @@
+    <div class="card mb-4">
+      <div class="card-header">
+          <i class="fas fa-table me-1"></i>
+          회원정보
+      </div>
+      <div class="card-body">
+          <table id="datatablesSimple">
+              <thead>
+                  <tr>
+                      <th>닉네임</th>
+                      <th>아이디</th>
+                      <th>전화번호</th>
+                      <th>이메일</th>
+                      <th>등록된 기기</th>
+                      <th></th>
+                  </tr>
+              </thead>
+              <tfoot>
+                  <tr>
+                      <th>닉네임</th>
+                      <th>아이디</th>
+                      <th>전화번호</th>
+                      <th>이메일</th>
+                      <th>등록된 기기</th>
+                      <th></th>
+                  </tr>
+              </tfoot>
+              <tbody>
+                  
+                <%
+                var i = 0;
+      
+                while(i < results.length) {
+              %>
+                <tr>
+                    <td><%=results[i].U_NICKNAME%></td>
+                    <td><%=results[i].U_ID%></td>
+                    <td><%=results[i].U_PHONE%></td>
+                    <td><%=results[i].U_EMAIL%></td>
+                    <td><%=results[i].U_MID%></td>
+                    <td><a class="abox" href="/user/delete_process/<%=results[i].U_NUM%>">비활성화</a></td>
+                </tr>
+              <% 
+                  i++;
+                }
+              %>
+              </tbody>
+          </table>
+      </div>
+  </div>

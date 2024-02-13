@@ -1,0 +1,54 @@
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            칵테일 랭킹 TOP10
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th></th>
+                        <th>이름</th>
+                        <th>제조 횟수</th>
+                        <th>평점</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                      <th>순위</th>
+                      <th></th>
+                      <th>이름</th>
+                      <th>제조 횟수</th>
+                      <th>평점</th>
+                      <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    
+                  <%
+                  var i = 0;
+        
+                  while(i < results.length) {
+                    var even = results[i].C_REVPOINT/results[i].C_REVCNT;
+                    var res = even.toFixed(1);
+                %>
+                  <tr>
+                      <td><%=i+1%>위</td>
+                      <td><img src="<%=results[i].C_IMG%>" style="width: 100px; height: 100px;"></td>
+                      <td><%=results[i].C_NAME%></td>
+                      <td><%=results[i].C_COUNT%>회</td>
+                      <td><%=res%>점</td>
+                      <td></td>
+                  </tr>
+                <% 
+                    i++;
+                  }
+                %>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-primary" style="width:90px; margin-left:16px; margin-bottom:16px; border-radius:8px;">
+          <a href="/cocktail/manage" style="text-decoration:none; color: white;">뒤로가기</a></button>
+    </div>
