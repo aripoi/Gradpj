@@ -33,3 +33,10 @@
 <img width="200" src="https://github.com/aripoi/Gradpj/assets/106456245/e440b76b-da3a-44e6-ac58-fd64d16f7100">
 
 ### 웹
+![gpa1](https://github.com/aripoi/Gradpj/assets/106456245/a526b162-d57a-4522-bedd-08112ab81571)
+![gpa2](https://github.com/aripoi/Gradpj/assets/106456245/89f43323-7ffa-45de-b995-e9305c008e65)
+![gpa7](https://github.com/aripoi/Gradpj/assets/106456245/c8bf6d6e-e6d2-4c3f-b749-4c9ab3aef722)
+![gpa10](https://github.com/aripoi/Gradpj/assets/106456245/a8091fd0-91e8-490e-9d19-7858bfc22559)
+![gpa5](https://github.com/aripoi/Gradpj/assets/106456245/85afca71-35d8-42b9-9af1-999c91b7631c)
+![gpa6](https://github.com/aripoi/Gradpj/assets/106456245/beb8001d-90a5-427d-ae3d-bcc01a9ed5c2)
+![gpa8](https://github.com/aripoi/Gradpj/assets/106456245/b80373f1-fcf6-43ce-b5be-e71db3c2ed33)
