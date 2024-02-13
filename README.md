@@ -3,7 +3,7 @@
    
    집에서도 어렵지 않게 챗봇의 도움을 받아 제작하는 칵테일 메이커 개발 프로젝트
 
-   관리자 전용 사이트 : ceprj.gachon.ac.kr:60005/
+   관리자 전용 사이트 : https://ceprj.gachon.ac.kr:60005/
    
    아이디 : admin
    
