@@ -28,8 +28,8 @@
         5. 제조 로그확인
 
 ## 주요기술
-   - JavaScript, Python, Viual Studio Code
-   - MySql, Node.Js, React.Js
+   - JavaScript, Python, SQL, Viual Studio Code
+   - MariaDB, Node.Js, React.Js
    - Express
    - Raspberry Pi
 
